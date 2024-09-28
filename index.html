@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Луикон</title>
+    <title>Луикон - Вишневые Аллеи Вики</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/icon.png" type="image/png" sizez="512x512">
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="512x512">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="https://visneviye-allei-wiki.github.io/Wiki/">
-            <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики!" class="banner">
-        </a>
-        <p>Добро пожаловать на Вишневые Аллеи Вики!</p>
+<body class="light-theme">
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    <div class="sidebar" id="sidebar">
+        <nav class="navigation">
+            <a href="https://visneviye-allei-wiki.github.io/Pages/">Все Статьи Вики</a>
+            <a href="#">Категории</a>
+            <a href="https://discord.gg/sAkkMxgh7f">Вики Сообщества</a>
+            <a href="https://visneviye-allei-wiki.github.io/sozdateli/">Создатели/Редакторы Вики</a>
+        </nav>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Темная тема</span>
         </div>
-      
-        <div class="main-content">
-            <div class="content">
-                <h2>Основная информация</h2>
-                <p>Луикон (lyikon) - Модератор <a href="https://discord.com/invite/wun8gmzdhJ">дискорд-сервера</a> Вишневых Аллей. Узнал о <a href="#">Черр</a>, её творчестве и комьюнити благодаря интервью с Мэем, после него он нашел её <a href="https://youtube.com/@cherru_">канал</a> и посмотрел несколько видео, узнав, что есть <a href="https://discord.com/invite/wun8gmzdhJ">дискорд-сервер</a>, он сразу же вступил 28 мая 2023.</p>
-                <h2>Чем занимался после захода</h2>
-                <p>Сразу после своего вступления он начал активно общаться. Обычно он не засиживался на подобных серверах, но комфортная атмосфера и приятные люди заставили его застрять тут надолго. Вскоре, через полтора месяца активного общения Луи становится модератором сервера.</p>
-                <h2>Чем занимается сейчас</h2>
-                <p>Сейчас он все еще модерирует сервер, рисует арты, в каком-то смысле компенсируя отсутствие <a href="#">Черр</a>.</p>
-                <h2>Интересные факты</h2>
-                <ul>
-                    <li>Трудоголик, художник, живущий на кофе и холодном чае.</li>
-                    <li>993 чашки кофе изначально его фишка.</li>
-                    <li><a href="#">Фред</a> его муж.</li>
-                    <li>Он один из немногих активных участников, что ни разу не получали мут.</li>
-                </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <a href="https://visneviye-allei-wiki.github.io/Wiki/">
+                    <img src="images/bannerwiki.png" alt="Добро пожаловать на Вишневые Аллеи Вики" class="banner">
+                </a>
+                <p>Добро пожаловать на Вишневые Аллеи Вики!</p>
             </div>
-            <div class="infobox">
-                <h2>Луикон</h2>
-                <img src="images/lyikon.png" alt="Луикон" class="avatar">
-                <table>
-                    <tr>
-                        <td>Должность</td>
-                        <td>Модератор</td>
-                    </tr>
-                    <tr>
-                        <td>Возраст</td>
-                        <td>17 лет</td>
-                    </tr>
-                    <tr>
-                        <td>Дата рождения</td>
-                        <td>12.04.2007</td>
-                    </tr>
-                    <tr>
-                        <td>Место рождения</td>
-                        <td>Украина</td>
-                    </tr>
-                    <tr>
-                        <td>Дата захода на сервер</td>
-                        <td>28.05.2023</td>
-                    </tr>
-                </table>
+            
+            <div class="divider"></div>
+            
+            <div class="content-wrapper">
+                <main class="main-info">
+                    <h2>Основная информация</h2>
+                    <p>Луикон (lyikon) - Модератор <a href="https://discord.com/invite/wun8gmzdhJ">дискорд-сервера</a> Вишневых Аллей. Узнал о <a href="#">Черр</a>, её творчестве и комьюнити благодаря интервью с Мэем, после него он нашел её <a href="https://youtube.com/@cherru_">канал</a> и посмотрел несколько видео, узнав, что есть <a href="https://discord.com/invite/wun8gmzdhJ">дискорд-сервер</a>, он сразу же вступил 28 мая 2023.</p>
+                    <h2>Чем занимался после захода</h2>
+                    <p>Сразу после своего вступления он начал активно общаться. Обычно он не засиживался на подобных серверах, но комфортная атмосфера и приятные люди заставили его застрять тут надолго. Вскоре, через полтора месяца активного общения Луи становится модератором сервера.</p>
+                    <h2>Чем занимается сейчас</h2>
+                    <p>Сейчас он все еще модерирует сервер, рисует арты, в каком-то смысле компенсируя отсутствие <a href="#">Черр</a>.</p>
+                    <h2>Интересные факты</h2>
+                    <ul>
+                        <li>Трудоголик, художник, живущий на кофе и холодном чае.</li>
+                        <li>993 чашки кофе изначально его фишка.</li>
+                        <li><a href="#">Фред</a> его муж.</li>
+                        <li>Он один из немногих активных участников, что ни разу не получали мут.</li>
+                    </ul>
+                </main>
+                <aside class="infobox">
+                    <h2>Луикон</h2>
+                    <img src="images/lyikon.png" alt="Луикон" class="avatar">
+                    <table>
+                        <tr>
+                            <td>Должность</td>
+                            <td>Модератор</td>
+                        </tr>
+                        <tr>
+                            <td>Возраст</td>
+                            <td>17 лет</td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения</td>
+                            <td>12.04.2007</td>
+                        </tr>
+                        <tr>
+                            <td>Место рождения</td>
+                            <td>Украина</td>
+                        </tr>
+                        <tr>
+                            <td>Дата захода на сервер</td>
+                            <td>28.05.2023</td>
+                        </tr>
+                    </table>
+                </aside>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-  </html>
-  
+</html>
